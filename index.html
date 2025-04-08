@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil - Apprendre le Wolof</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fefefe;
+    }
+    
+    .hero h1 {
+      font-size: 3rem;
+      animation: fadeInDown 1s ease;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      animation: fadeInUp 1s ease;
+    }
+    .btn-main {
+      background-color: #ffc107;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: all 0.3s;
+    }
+    .btn-main:hover {
+      background-color: #ff9800;
+      transform: scale(1.05);
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s ease;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #111;
+      color: #ddd;
+    }
+    footer a {
+      color: #ffc107;
+      text-decoration: none;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .image-box {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* largeur / hauteur */
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.video-box {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 315px; /* tu peux ajuster ici */
+  border: none;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
+              url('assets/img/drapeau-senegal.jpeg') center/cover no-repeat;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  background-attachment: fixed;
+  border-bottom: 5px solid #ffc107;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER CLASSIQUE -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🌍 Apprendre le Wolof</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-item"><a href="lecons.html" class="nav-link">Leçons</a></li>
+          <li class="nav-item"><a href="culture.html" class="nav-link">Culture</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Bienvenue sur Apprendre le Wolof</h1>
+    <p>Explore la langue et la culture sénégalaise à travers des vidéos, des images et des exercices interactifs.</p>
+    <a href="lecons.html" class="btn btn-main mt-3">Commencer les leçons</a>
+  </section>
+  
+
+  <!-- POURQUOI APPRENDRE -->
+  <section class="container my-5" data-aos="fade-up">
+    <h2 class="text-center mb-4">🇸🇳 Pourquoi apprendre le Wolof ?</h2>
+    <p class="lead text-center">Le Wolof est une porte d’entrée vers le Sénégal, ses valeurs, sa Teranga, ses traditions. Apprendre le Wolof, c’est entrer dans une culture vivante et chaleureuse.</p>
+  </section>
+
+  <!-- VIDEO SENEGAL -->
+  <section class="container my-5 text-center" data-aos="fade-up">
+    <h2 class="mb-4">🎥 Découvrez le Sénégal</h2>
+    <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/zV3F-HZ5G-Q" title="Présentation Sénégal" allowfullscreen></iframe>
+      </div>      
+  </section>
+
+
+  <section class="container my-5">
+    <h2 class="text-center mb-5">👷‍♀️ Métiers en Wolof</h2>
+    <div class="row g-4">
+  
+      <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="0">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="image-box">
+            <img src="assets/img/enseignant.jpeg" alt="Jàngalekat">
+          </div>
+          <div class="card-body text-center">
+            <p><strong>Jàngalekat</strong><br><small>Enseignant</small></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="image-box">
+            <img src="assets/img/policier.jpeg" alt="Alkaati">
+          </div>
+          <div class="card-body text-center">
+            <p><strong>Alkaati</strong><br><small>Policier</small></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="image-box">
+            <img src="assets/img/medecin.jpeg" alt="Doktoor">
+          </div>
+          <div class="card-body text-center">
+            <p><strong>Doktoor</strong><br><small>Médecin</small></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="image-box">
+            <img src="assets/img/ouvrier.jpeg" alt="Ligéeykat">
+          </div>
+          <div class="card-body text-center">
+            <p><strong>Ligéeykat</strong><br><small>Ouvrier</small></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="400">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="image-box">
+            <img src="assets/img/mecanicien.jpeg" alt="Mekaniise">
+          </div>
+          <div class="card-body text-center">
+            <p><strong>Mekaniise</strong><br><small>Mécanicien</small></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="500">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="image-box">
+            <img src="assets/img/cuisinier.jpg" alt="Toggkat">
+          </div>
+          <div class="card-body text-center">
+            <p><strong>Toggkat</strong><br><small>Cuisinier</small></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="600">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="image-box">
+            <img src="assets/img/vendeur.jpg" alt="Jaaykat">
+          </div>
+          <div class="card-body text-center">
+            <p><strong>Jaaykat</strong><br><small>Vendeur</small></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="700">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="image-box">
+            <img src="assets/img/tailleur.jpg" alt="Ñawkat">
+          </div>
+          <div class="card-body text-center">
+            <p><strong>Ñawkat</strong><br><small>Tailleur</small></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="800">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="image-box">
+            <img src="assets/img/agriculteur.jpeg" alt="Beykat">
+          </div>
+          <div class="card-body text-center">
+            <p><strong>Beykat</strong><br><small>Agriculteur</small></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="900">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="image-box">
+            <img src="assets/img/chanteur.jpeg" alt="Woykat">
+          </div>
+          <div class="card-body text-center">
+            <p><strong>Woykat</strong><br><small>Chanteur</small></p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <!-- VIDEO SCÉNARIO -->
+  <section class="container my-5 text-center" data-aos="fade-up">
+    <h2 class="mb-4">🎬 Scène de vie quotidienne en Wolof</h2>
+    <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/_Cx61i567Bs" title="Scène en wolof" allowfullscreen></iframe>
+      </div>      
+  </section>
+
+  <!-- FOOTER AVEC OMAR -->
+  <footer id="footer" class="text-center py-5">
+    <img src="assets/img/omar-img.jpg" alt="Omar Diouf" width="100" class="rounded-circle mb-3 shadow">
+    <h5>Omar Diouf</h5>
+    <p>📧 <a href="mailto:Odiou071@uottawa.ca">Odiou071@uottawa.ca</a></p>
+    <p>
+      <a href="https://www.linkedin.com/in/boune-diouf/" target="_blank">LinkedIn</a> |
+      <a href="https://x.com/khatab_juuf?s=11&t=ntRK2feeAY3aK0LaneX7CQ" target="_blank">X (Twitter)</a>
+    </p>
+    <p class="text-muted mt-3">© 2025 Serigne – Site éducatif wolof. Tous droits réservés.</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

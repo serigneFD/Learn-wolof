@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Leçons - Apprendre le Wolof</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .card-lecon {
+      border-left: 6px solid #ffc107;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    .card-lecon:hover {
+      transform: scale(1.02);
+      border-left: 6px solid #0d6efd;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .dialogue-box {
+      background: #f8f9fa;
+      border-left: 4px solid #28a745;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+    }
+  </style>
+  
+</head>
+<body>
+
+<!-- NAVBAR UNIFIÉE -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">🌍 Apprendre le Wolof</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+        <li class="nav-item"><a href="lecons.html" class="nav-link active">Leçons</a></li>
+        <li class="nav-item"><a href="culture.html" class="nav-link">Culture</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- SECTION LEÇONS -->
+<div class="container my-5">
+    <h2 class="text-center mb-4" data-aos="fade-down"> Leçons interactives en Wolof</h2>
+    <p class="lead text-center" data-aos="fade-up">Découvre des expressions, dialogues et jeux de rôle pour maîtriser le Wolof à ton rythme.</p>
+  
+    <div class="row mt-4">
+      <!-- Leçon 1 -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card shadow-sm h-100 card-lecon">
+          <div class="card-body">
+            <h5 class="card-title">👤 Se présenter</h5>
+            <p class="card-text">Apprendre à dire son nom, sa nationalité, son métier.</p>
+            <p class="text-muted"><em>Maa ngi tudd Ousmane. Maa ngi jogé Dakar.</em></p>
+            <a href="lecon1.html" class="btn btn-outline-primary btn-sm">Voir la leçon</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Leçon 2 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card shadow-sm h-100 card-lecon">
+          <div class="card-body">
+            <h5 class="card-title">👋 Salutations</h5>
+            <p class="card-text">Salamalekum, Na nga def ? Jaam nga am ?</p>
+            <p class="text-muted"><em>Salamalekum ! – Aleikum Salam. Maa ngi fi rekk.</em></p>
+            <a href="lecon2.html" class="btn btn-outline-primary btn-sm">Voir la leçon</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Leçon 3 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card shadow-sm h-100 card-lecon">
+          <div class="card-body">
+            <h5 class="card-title">🌍 Nationalités & métiers</h5>
+            <p class="card-text">Exprimer ce que tu fais et d’où tu viens.</p>
+            <p class="text-muted"><em>Man Senegaale laa. Maa ngi ligéey ni jàngalekat.</em></p>
+            <a href="lecon3.html" class="btn btn-outline-primary btn-sm">Voir la leçon</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- SECTION JEUX -->
+    <div class="mt-5" data-aos="fade-up">
+      <h4>📝 Vocabulaire et exercices</h4>
+      <ul>
+        <li><strong>Na nga tudd ?</strong> – Comment tu t’appelles ?</li>
+        <li><strong>Man France laa jogé</strong> – Je viens de France</li>
+        <li><strong>Doktoor</strong> = Médecin, <strong>Ñawkat</strong> = Tailleur</li>
+      </ul>
+  
+      <h5 class="mt-4">🎭 Dialogue</h5>
+      <div class="dialogue-box">
+        <p><strong>A :</strong> Salamalekum !</p>
+        <p><strong>B :</strong> Aleikum Salam. Na nga def ?</p>
+        <p><strong>A :</strong> Maa ngi fi rekk. Yaangi noos ?</p>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- FOOTER UNIFIÉ -->
+<footer class="bg-dark text-white text-center py-5 mt-5">
+  <img src="assets/img/omar-img.jpg" alt="Omar Diouf" width="80" class="rounded-circle shadow mb-3">
+  <h5>Omar Diouf</h5>
+  <p>📧 <a href="mailto:Odiou071@uottawa.ca" class="text-warning">Odiou071@uottawa.ca</a></p>
+  <p>
+    <a href="https://www.linkedin.com/in/boune-diouf/" class="text-warning" target="_blank">LinkedIn</a> |
+    <a href="https://x.com/khatab_juuf" class="text-warning" target="_blank">X (Twitter)</a>
+  </p>
+  <p class="text-muted mt-3">© 2025 Serigne – Site éducatif wolof. Tous droits réservés.</p>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
